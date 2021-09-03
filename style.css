@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+section {
+    margin-top: 20px;
+}
+
+.first-heading,
+.second-heading {
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+}
+
+.first-heading {
+    font-weight: 200;
+}
+
+p {
+    font-size: 13px;
+    color: hsl(229, 6%, 66%);
+}
+
+.heading-para {
+    text-align: center;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 16px;
+    color: hsl(234, 12%, 34%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.supervisor,
+.karma,
+.calculator,
+.team-builder {
+    border: 3px solid black;
+    width: 18rem;
+    height: 12rem;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 4px;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: bottom 20px right 20px;
+    box-shadow: 2px 4px 10px -3px gray;
+}
+
+.supervisor {
+    border-top-color: hsl(180, 62%, 55%);
+    background-image: url(./images/icon-supervisor.svg);
+}
+
+.team-builder {
+    border-top-color: hsl(0, 78%, 62%);
+    background-image: url(./images/icon-team-builder.svg);
+}
+
+.karma {
+    border-top-color: hsl(34, 97%, 64%);
+    background-image: url(./images/icon-karma.svg);
+}
+
+.calculator {
+    border-top-color: hsl(212, 86%, 64%);
+    background-image: url(./images/icon-calculator.svg);
+}
+
+/* media queries */
+
+@media only screen and (max-width:760px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    section {
+        margin: 40px 5px;
+    }
+
+    .supervisor,
+    .karma,
+    .calculator,
+    .team-builder {
+        border: 3px solid black;
+        width: 16rem;
+        height: 12rem;
+        margin: 15px;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 2px 4px 10px -3px gray;
+        border-right-color: white;
+        border-bottom-color: white;
+        border-left-color: white;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: bottom 20px right 20px;
+    }
+
+    .supervisor {
+        border-top-color: hsl(180, 62%, 55%);
+        background-image: url(./images/icon-supervisor.svg);
+    }
+
+    .team-builder {
+        border-top-color: hsl(0, 78%, 62%);
+        background-image: url(./images/icon-team-builder.svg);
+    }
+
+    .karma {
+        border-top-color: hsl(34, 97%, 64%);
+        background-image: url(./images/icon-karma.svg);
+    }
+
+    .calculator {
+        border-top-color: hsl(212, 86%, 64%);
+        background-image: url(./images/icon-calculator.svg);
+    }
+}
